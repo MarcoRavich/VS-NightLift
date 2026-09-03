@@ -23,29 +23,17 @@ A low-light image/video enhancement web application based on **Flask + OpenCV**,
 ## Enhancement Methods
 
 | Methods | Description |
-
 |------|------|
-
 | **Auto** (One-Click Enhancement) | Automatically analyzes darkness and adaptively selects the best parameters |
-
 | **CLAHE** | Contrast Limited Adaptive Histogram Equalization for the L channel in the LAB color space |
-
 | **Gamma** | Gamma correction, non-linear brightness enhancement |
-
 | **Auto Levels** | Automatic level stretching, histogram stretching to [0, 255] |
-
 | **MSRCP** | Multi-Scale Retinex with Chromaticity Preservation |
-
 | **SSR** | Single-Scale Retinex |
-
 | **Dehaze** | Dark Channel Prior |
-
 | **White Balance** | Gray World / Perfect Reflector |
-
 | **Brightness/Contrast** | Adaptive brightness/contrast adjustment |
-
 | **Comprehensive** | Combined pipeline: Auto White Balance + CLAHE + Gamma + Unsharp Masking Sharpening |
-
 | **Strong** | Powerful Pipeline: MSRCP + CLAHE + Gamma, for extreme low light |
 
 ## Darkness Analysis
