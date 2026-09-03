@@ -53,15 +53,10 @@ The system will automatically analyze the following metrics of the uploaded imag
 Based on the analysis results, the image is divided into four darkness levels:
 
 | Level | Judgment Criteria | Auto Strategy |
-
 |------|----------|-----------|
-
 | **extreme** (Extremely Dark) | dark_ratio > 0.7 and mean_lum < 40 | MSRCP + Strong CLAHE + Strong Gamma |
-
 | **severe** (Very Dark) | dark_ratio > 0.5 or mean_lum < 60 | White Balance + Medium Clahe + Medium Gamma + Sharpening |
-
 | **moderate** (darker) | dark_ratio > 0.3 or mean_lum < 90 | White Balance + Light Clahe + Light Gamma |
-
 | **mild** (slightly dark) | Other cases | White Balance + Light Clahe only |
 
 ## Algorithm References
