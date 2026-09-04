@@ -1,0 +1,88 @@
+{
+  "source": {
+    "path": "CONCERT.MTS",
+    "fps": "25/1",
+    "width": 1920,
+    "height": 1080,
+    "duration_seconds": 791.0
+  },
+  "samples": [
+    {
+      "frame": 2966,
+      "time_seconds": 118.6,
+      "mean_luma": 73.27,
+      "dark_ratio": 0.471,
+      "level": "moderate"
+    },
+    {
+      "frame": 5273,
+      "time_seconds": 210.9,
+      "mean_luma": 64.93,
+      "dark_ratio": 0.5428,
+      "level": "severe"
+    },
+    {
+      "frame": 7580,
+      "time_seconds": 303.2,
+      "mean_luma": 42.5,
+      "dark_ratio": 0.6997,
+      "level": "severe"
+    },
+    {
+      "frame": 9888,
+      "time_seconds": 395.5,
+      "mean_luma": 62.64,
+      "dark_ratio": 0.5662,
+      "level": "severe"
+    },
+    {
+      "frame": 12195,
+      "time_seconds": 487.8,
+      "mean_luma": 77.49,
+      "dark_ratio": 0.384,
+      "level": "moderate"
+    },
+    {
+      "frame": 14502,
+      "time_seconds": 580.1,
+      "mean_luma": 69.89,
+      "dark_ratio": 0.5132,
+      "level": "severe"
+    },
+    {
+      "frame": 16809,
+      "time_seconds": 672.4,
+      "mean_luma": 28.73,
+      "dark_ratio": 0.8092,
+      "level": "extreme"
+    }
+  ],
+  "median_mean_luma": 64.93,
+  "median_dark_ratio": 0.5428,
+  "pipeline": {
+    "level": "severe",
+    "application": "enhance_auto_per_frame",
+    "operations": [
+      {
+        "operation": "gray_world"
+      },
+      {
+        "operation": "clahe",
+        "clip_limit": 2.5,
+        "tile_grid": [
+          8,
+          8
+        ]
+      },
+      {
+        "operation": "gamma",
+        "gamma": 0.45
+      },
+      {
+        "operation": "unsharp",
+        "sigma": 2.5,
+        "amount": 0.4
+      }
+    ]
+  }
+}
