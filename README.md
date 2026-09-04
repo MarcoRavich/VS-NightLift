@@ -1,4 +1,4 @@
-# NightLift — Low-Light Enhancement System
+# VS-NightLift — VaporSynth Low-Light Enhancement Script
 
 A low-light image/video enhancement providing various "classic" algorithms.
 
