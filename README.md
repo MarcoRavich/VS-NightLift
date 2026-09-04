@@ -1,6 +1,6 @@
 # NightLift — Low-Light Enhancement System
 
-A low-light image/video enhancement web application based on **Flask + OpenCV**, implemented purely with OpenCV, providing various classic enhancement algorithms.
+A low-light image/video enhancement providing various "classic" algorithms.
 
 ## Automatic-analysis code refactoring
 
